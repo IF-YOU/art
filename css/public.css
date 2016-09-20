@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, input {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+textarea {
+  resize: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.l-float {
+  float: left;
+}
+
+.r-float {
+  float: right;
+}
+
+body {
+  font: normal 100% "黑体",Arial,"Arial Black";
+  overflow-x: hidden;
+  background: #efefef;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  color: #505050;
+  text-decoration: none;
+}
+a{
+text-decoration:none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.base-w {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+img, object {
+  max-width: 100%;
+}
+img{
+  height: auto;
+}
+section{
+  display: block;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+     margin-top: 0; 
+     margin-bottom: 0; 
+}
