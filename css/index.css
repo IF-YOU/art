@@ -629,6 +629,10 @@ ul, li {
   #nav .n{
     display: none;
   }
+  /*轮播*/
+  #carousel1 .car_click{
+    left: 6%;
+  }
   /*新闻资讯*/
   .content {
     margin-right: 0;
