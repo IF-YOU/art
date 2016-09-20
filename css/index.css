@@ -124,9 +124,15 @@
   width: 960px;
   margin: 0 auto;
 }
-
+#nav .showhiden{
+  display: none;
+}
+#nav .showhiden a{
+  color: #fff;
+}
 #nav li {
   float: left;
+  width: 12%;
   height: 60px;
   position: relative;
 }
@@ -617,6 +623,13 @@ ul, li {
 /*响应式*/
 @media(max-width:979px){
   /*顶部*/
+  /*导航*/
+  #nav li{
+    width: 11%;
+  }
+  #nav .n{
+    display: none;
+  }
   /*新闻资讯*/
   .content {
     margin-right: 0;
@@ -630,6 +643,29 @@ ul, li {
   }
 }
 @media(max-width:767px){
+  /*导航*/
+  #nav li{
+    width: 100%;
+    display: none;
+    background: #6C5046;
+    border-top: 1px solid #fff;
+  }
+  #nav .showhiden{
+    display: block;
+    border-top: 0;
+  }
+  #nav .showhiden span{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 1em;
+  }
+  #nav li ul{
+    top: 20px;
+    left: 100px;
+  }
   #tab{
     display: none;
   }
@@ -642,6 +678,7 @@ ul, li {
   #tab_con .rige {
     margin-left: 1.5em;
   }
+
 }
 @media(max-width:375px){
   .content .carousel2{

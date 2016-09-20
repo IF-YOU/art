@@ -35,6 +35,9 @@ $(function() {
 		if (!$(this).find("ul").is(":animated")) $(this).find("ul").slideUp("fast");
 		$("#nav ul ul").slideUp("fast")
 	})
+	$(".showhiden").click(function(){
+		$("#nav li").toggle(1500);
+	})
 });
 // 轮播
 $(function(){
