@@ -7,6 +7,10 @@
  	<link rel="stylesheet" href="./css/public.css">
  	<link rel="stylesheet" href="./css/swiper-3.3.1.min.css">
  	<link rel="stylesheet" href="./css/bootstrap.min.css">
+ 	
+	<link rel="stylesheet" href="assets/css/sangarSlider.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/themes/default/default.css" type="text/css" media="all">
+	<!-- <link rel="stylesheet" href="assets/css/demo.css" type="text/css" media="all"> -->
  	<link rel="stylesheet" href="./css/index.css">
  </head>
  <body>
@@ -101,30 +105,21 @@
     </div>
     <!-- 导航 -->
     <!-- 轮播 -->
-    <div class="carouse">
-    	<div id="carousel1" name="0">
-    		<div class="car_bigp">
-    			<a href=""><img style="display:block" src="images/T1.png"></a>
-    			<a href=""><img src="images/T2.png"></a>
-    			<a href=""><img src="images/T3.png"></a>
-    			<a href=""><img src="images/T4.png"></a>
-    			<a href=""><img src="images/T1.png"></a>
-    			<a href=""><img src="images/T3.png"></a>
-    		</div>
-    		<div class="car_click">
-    			<div class="car_c_smallpic">
-    				<input class="car_c_inpt1" type="button"/>
-    				<img style="border:solid 2px Darkorange" src="images/11.jpg"/>
-    				<img src="images/22.jpg"/>
-    				<img src="images/33.jpg"/>
-    				<img src="images/44.jpg"/>
-    				<img src="images/55.jpg"/>
-    				<img src="images/66.jpg"/>
-    				<input class="car_c_inpt2" type="button"/>
-    			</div>
-    		</div>
-    	</div>
-    </div>
+    <div class="htmleaf-container">
+		
+		<div class="htmleaf-content bgcolor-3">
+			<div class='sangar-slideshow-container' id='sangar-example'>
+				<div class='sangar-content-wrapper' style='display:none;'>			
+					<div class='sangar-content'><img src='images/T1.png' /></div>
+					<div class='sangar-content'><img src='images/T2.png' /></div>				
+					<div class='sangar-content'><img src='images/T3.png' /></div>
+					<div class='sangar-content'><img src='images/T4.png' /></div>
+					<div class='sangar-content'><img src='images/T1.png' /></div>				
+				</div>
+			</div>	
+		</div>
+		
+	</div>
     <!-- 轮播 -->
     <!-- 艺术资讯 -->
     <section class="container clear">
@@ -675,6 +670,26 @@
 <script type="text/javascript" src="js/jquery.tabs.js"></script>
 <script type="text/javascript" src="js/jquery.lazyload.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+<!-- 轮播 -->
+<!-- <script type="text/javascript" src="assets/js/jquery.js"></script> -->
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/imagesloaded.min.js"></script>
+<!-- jQuery Sangar Slider -->
+<script type="text/javascript" src="assets/js/sangarSlider/sangarBaseClass.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarSetupLayout.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarSizeAndScale.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarShift.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarSetupBulletNav.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarSetupNavigation.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarSetupSwipeTouch.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarSetupTimer.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarBeforeAfter.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarLock.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarResponsiveClass.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarResetSlider.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider/sangarTextbox.js"></script>
+<script type="text/javascript" src="assets/js/sangarSlider.js"></script>
+
 <script type="text/javascript" src="js/index.js"></script>
 </html>
