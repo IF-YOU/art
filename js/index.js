@@ -43,7 +43,7 @@ $(function() {
 $(document).ready(function($) {
 	/* identifier variable must be unique ID */
 	var sangar = $('#sangar-example').sangarSlider({
-		timer :  false, // true or false to have the timer
+		timer :  500, // true or false to have the timer
 		pagination : 'content-horizontal', // bullet, content, none
 		paginationContent : ["images/11.jpg", "images/22.jpg", "images/33.jpg", "images/44.jpg", "images/55.jpg"], // can be text, image, or something			        
 		paginationContentType : 'image', // text, image

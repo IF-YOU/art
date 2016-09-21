@@ -28,7 +28,7 @@ var sangarSizeAndScale;
                         $(this).css({
                             'height': base.origHeight + 'px',
                             'width': curImgWidth + 'px',
-                            'margin-left': curDiffWidth / 2  + 'px'
+                            // 'margin-left': curDiffWidth / 2  + 'px'
                         })
 
                         // neutralize
