@@ -674,6 +674,9 @@
   #tab_con .rige {
     margin-left: 1.5em;
   }
+  .card{
+    width: 100%;
+  }
 
 }
 
@@ -704,7 +707,5 @@
   .col-xs-6 {
     width: 44%;
   }
-  .card{
-    width: 100%;
-  }
+
 }
