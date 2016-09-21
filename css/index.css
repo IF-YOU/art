@@ -550,7 +550,58 @@
   }
 /*合作*/
 
+/*3D艺术馆*/
+.art .title{
+  text-align: center;
+}
+.title h2{
+  color: #2e2949;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.title h3{
+  font-size: 1.5em;
+  color: #999;
+}
+.containet{
+  margin-top: 30px;
+}
+.card{
+  padding: 1em 2em;
+  background: #fff;
+  overflow: hidden;
+  width: 33.33333333333333333%;
+}
+.card .topper{
+  width: 100%;
+}
+.topper a{
+  width: 100%;
+}
+.topper h3{
+  color: #000;
+  font-size: 1.5em;
+}
+.topper h4{
+  color: #000;
+  font-size: 1em;
+}
+.card .center{
+  margin-top: 10px;
+}
+.center p{
+  font-size: 1em;
+  color: #6c6c6c;
+}
+.center .more{
+  color: #ff0000;
+  height: 2em;
+  line-height: 2em;
+}
+.card .footer{
 
+}
+/*3D艺术馆*/
 
 
 
@@ -580,6 +631,9 @@
     top: 20%;
   }
 }
+
+
+
 @media(max-width:767px){
   /*导航*/
   #nav li{
@@ -604,6 +658,10 @@
     top: 20px;
     left: 100px;
   }
+  /*艺术资讯*/
+  .swiper-slide .wen h5{
+    margin-bottom: 2.5em;
+  }
   #tab{
     display: none;
   }
@@ -618,6 +676,18 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:375px){
   .content .carousel2{
     display: none;
@@ -633,5 +703,8 @@
   }
   .col-xs-6 {
     width: 44%;
+  }
+  .card{
+    width: 100%;
   }
 }
