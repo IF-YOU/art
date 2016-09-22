@@ -31,6 +31,7 @@
 	position:relative; 
 	overflow:hidden; 
 	float:left;
+  display:inline; 
 }
 .flash .con ul li.current{
 	width:90.6%;
@@ -67,10 +68,12 @@
 	height:200px; 
 	margin-right:10px; 
 	box-shadow:0 0 10px #000; 
-	float:left;-webkit-animation:zq 2s infinite; 
+	float:left;
+  -webkit-animation:zq 2s infinite; 
 	animation:zq 2s infinite; 
 	border-radius:50%;
 }
+
 .txt{
 	position:absolute; 
 	right: 35px;
@@ -237,7 +240,7 @@
 
 /*导航*/
 
-.container,.product,.wrapper,.art,.news {
+.container,.product,.wrapper,.art,.news,.auther,.informat {
     max-width: 1120px;
     margin: 30px auto 0;
     padding: 10px;
@@ -468,8 +471,7 @@
 .txt-two>div{
  position: absolute;
  margin: 0 auto;
- top: 50px;
- bottom: 50px;
+ top: 25%;
  left: 0;
  right: 0;
 }
@@ -488,6 +490,7 @@
     width: 20%;
     height: 43%;
     float: left;
+    display:inline; 
     position: absolute;
     top: 25%;
   }
@@ -513,6 +516,7 @@
   #tab_con{
     width: 80%;
     float: right;
+    display:inline; 
     overflow: hidden;
   }
   #tab_con>div{
@@ -603,7 +607,7 @@
   height: 2em;
   line-height: 2em;
 }
-.card .footer{
+.card .footes{
 
 }
 /*3D艺术馆*/
@@ -641,7 +645,7 @@
 
 .excerpt .focus {
     float: left;
-    margin: 0 20px 0 0;
+    /*margin: 0 20px 0 0;*/
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -661,6 +665,7 @@
 }
 .excerpt .rigt{
   float: right;
+  width: 60%;
 }
 .rigt .label{
   font-size: 1em;
@@ -677,7 +682,8 @@
     padding: 0.8em 0;
 }
 .excerpt h2 a{
-  color: #000;  
+  color: #000;
+  font-size: 1em;  
 }
 .excerpt .note {
     color: #777;
@@ -733,12 +739,96 @@
 }
 /*优精新闻*/
 
+/*优精艺术家*/
+.auall{
+  overflow: hidden;
+}
+.authr{
+
+}
+.chx {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.chx>div {
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+/*优精艺术家*/
 
 
+/*更多资讯*/
+.excerpt h3{
+  font-size: 1.5em;
+  color: #777;
+}
+/*更多资讯*/
 
 
+/*底部*/
+.footer {
+  width: 100%;
+  /*height: 154px;*/
+  background-color: #202020;
+  overflow: hidden;
+}
 
+.fotTop {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #444;
+}
 
+.fotTop ul {
+  width: 70%;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.fotTop ul li {
+  float: left;
+  /*margin: 0 19px;*/
+  height: 60px;
+  text-align: center;
+  width: 12.5%;
+}
+
+.fotTop ul li a {
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 60px;
+  text-align: center;
+}
+
+.fotBot {
+  width: 100%;
+  /*height: 120px;*/
+}
+
+.fotBot ul {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.fotBot ul li {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75em;
+}
+/*底部*/
 
 
 /*响应式*/
@@ -765,6 +855,11 @@
   /*合作*/
   #tab{
     top: 20%;
+  }
+
+  /*艺术家*/
+  .authr{
+    width: 33.333333333333333%;
   }
 }
 
@@ -827,6 +922,21 @@
   .righter{
     display: none;
   }
+
+  /*艺术家*/
+  .authr{
+    width: 50%;
+  }
+  /*底部*/
+  .fotTop,.fotTop ul{
+    height: 120px;
+  }
+  .fotTop ul li{
+    width: 25%;
+  }
+  .fotBot ul{
+    width: 70%;
+  }
 }
 
 
@@ -866,5 +976,9 @@
   }
   .timer .author{
     width: 65%;
+  }
+  /*艺术家*/
+  .authr{
+    width: 50%;
   }
 }

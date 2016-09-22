@@ -107,3 +107,9 @@ $(function(){
 			$("#tab_con_4").fadeIn(600);
 		});
 });
+// 艺术家
+$(".authr").hover(function(){
+	$(this).find(".chx").css("display","block");
+},function(){
+	$(this).find(".chx").css("display","none");
+})
