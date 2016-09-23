@@ -1,24 +1,31 @@
 // 顶部
 var timer=null;
 var i=0;
+
 $(function(){
 	$(".flash .con ul li").mouseover(function(){
 		clearInterval(timer);
 	});
 	$(".flash .con ul li").click(function(){
-		$(this).stop().animate({width:"905px"},300).siblings().stop().animate({width:"46px"},300)
+		$(this).stop().animate({width:"84%"},300).siblings().stop().animate({width:"3em"},300)
 	});
 	$(".flash .con ul li").mouseout(function(){
 		timer=setInterval("startMove()",2000)
 	});
-	
+	timer=setInterval("startMove()",2000);
 })
 function startMove(){
 	i++;
-	if(i>$(".flash .con ul li").length-1){i=0}
-		$(".flash .con ul li").stop().eq(i).animate({width:"905px"},300).siblings().stop().animate({width:"46px"},300)
+	var $wind=$(window).width();
+	console.log($wind);
+	var $num=767;
+	if($wind>$num){
+		if(i>$(".flash .con ul li").length-1){i=0}
+		$(".flash .con ul li").stop().eq(i).animate({width:"84%"},300).siblings().stop().animate({width:"46px"},300)
+	}
+	
 };
-timer=setInterval("startMove()",2000);
+
 // 导航
 $(function() {
 	$("#nav>ul>li").hover(function() {

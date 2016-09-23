@@ -15,34 +15,33 @@
     margin-top: 0;
 }
 .flash{
-	width:1024px; 
-	/*height:280px; */
+	width:65%; 
 	margin:0 auto; 
   padding: 10px; 
 	background: url(../images/D2.jpg);
 }
 .flash .con{
 	width: 100%; 
-	height:280px;
+	height:18em;
 }
 .flash .con ul li{
-	width:46px; 
-	height:280px; 
+	width:3em; 
+	height:18em; 
 	position:relative; 
 	overflow:hidden; 
 	float:left;
   display:inline; 
 }
 .flash .con ul li.current{
-	width:90.6%;
+	width:86.5%;
 }
 .flash .con ul li h3{
-	width:46px; 
-	height:250px; 
+	width:3em; 
+	height:16em; 
 	color:#fff; 
 	font-family:"微软雅黑"; 
 	font-size:16px; 
-	padding:15px;
+	padding:5em 1em;
   overflow: hidden;
   clear: both;
 }
@@ -55,31 +54,38 @@
 .flash .con ul li.ti3 h3{
 	background: #09F;
 }
+.con ul{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .show{
 	position:absolute; 
-	left:46px; 
-	top:0; 
-	width:710px; 
-	height:200px; 
-	padding:40px 12px 40px 25px;
+	left:5em; 
+	top:15%; 
+	width:70%; 
+  height: 70%;
+	/*padding:2.5em 0;*/
 }
 .show img{
-	width:200px; 
-	height:200px; 
-	margin-right:10px; 
+	width:30%; 
+	height:auto; 
+	margin-right:1em; 
 	box-shadow:0 0 10px #000; 
 	float:left;
-  -webkit-animation:zq 2s infinite; 
-	animation:zq 2s infinite; 
-	border-radius:50%;
+  border: 5px solid #fff;
+	border-radius:5px;
 }
-
+.show img:nth-child(3){
+  margin-right: 0;
+}
 .txt{
 	position:absolute; 
-	right: 35px;
+	left: 75%;
 	top:0; 
-	width:220px; 
-	height:200px; 
+	width:13em; 
+	height:18em;
+  padding: 1em 0; 
 }
 .txt p {
     color: #fff;
@@ -88,9 +94,9 @@
     position: relative;
 }
 .txt .p1,.txt .p2 ,.txt .p3 ,.txt .p4 {
-	font-size: 14px;
-	width: 14px;
-	margin: 0 15px;
+	font-size: 0.9em;
+	width: 0.9em;
+	margin: 0 1em;
 }
 
 @keyframes zq{
@@ -834,6 +840,18 @@
 /*响应式*/
 @media(max-width:979px){
   /*顶部*/
+  .flash{
+    width: 100%;
+  }
+  .flash .con ul li.current {
+    width: 88.5%;
+  }
+  .show{
+    width: 90%;
+  }
+  .txt{
+    display: none;
+  }
   /*导航*/
   #nav li{
     width: 11%;
@@ -866,6 +884,19 @@
 
 
 @media(max-width:767px){
+  /*顶部*/
+  .flash .con ul li.current{
+    width: 100%;
+  }
+  .show{
+    width: 83%;
+  }
+  .txt{
+    left: 15%;
+  }
+  .ti2,.ti3{
+    display: none ! important;
+  }
   /*导航*/
   #nav li{
     width: 100%;
@@ -929,10 +960,14 @@
   }
   /*底部*/
   .fotTop,.fotTop ul{
-    height: 120px;
+    height: 80px;
   }
   .fotTop ul li{
     width: 25%;
+    height: 40px;
+  }
+  .fotTop ul li a{
+    line-height: 40px;
   }
   .fotBot ul{
     width: 70%;
@@ -951,6 +986,14 @@
 
 
 @media(max-width:375px){
+  /*顶部*/
+  .show img{
+    width: 43%;
+  }
+  .show img:nth-child(3){
+    display: none;
+  }
+
   .content .carousel2{
     display: none;
   }
